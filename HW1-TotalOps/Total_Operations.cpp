@@ -18,8 +18,10 @@ int main()
   int B = 2; //value of B is number of times the array is divided 
   int S = log2(N) - 1; //value of S is log2(N) - 1 
 
-  int totalOperations = S*((2*N)+A*((2*N)/pow(B,S))); 
+  //int totalOperations = S*((2*N)+A*((2*N)/pow(B,S))); 
   //Time complexity: O(S*((2*N)+A*((2*N)/pow(B,S))))
+  //Real Time Complexity: Time Complexity: O(N(Logn))
+  int totalOperations = N*(log2(N)); 
   cout << "The total number of Operations for N of " << N << " is: " << totalOperations << endl; 
   
 
